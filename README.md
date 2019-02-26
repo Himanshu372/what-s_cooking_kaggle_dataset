@@ -1,1 +1,3 @@
 # what-s_cooking_kaggle_dataset
+ This repo details my approach to 'What's cooking' competition on Kaggle. Dataset contains ingredients from different cuisines from around the world. Training set contains data in json format. Goal was to predict cuisine given ingredients as input. 
+ Data preprocessing included processing json data into dataframe. A simple approach that I took in order to achieve goal was to calculate a weighted score for each ingredient that had ever occured in each cuisine. I took this approach because I think some ingredients are inherently frequent while cooking a specific cuisine. 
