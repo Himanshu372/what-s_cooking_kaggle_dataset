@@ -126,33 +126,6 @@ if __name__=='__main__':
   seed = 42
   np.random.seed(seed)
 
-  # # define 10-fold cross validation test harness
-  # kfold = KFold(n_splits=5, shuffle=True, random_state=seed)
-  #
-  # cvscores = []
-  # for train, test in kfold.split(padded_docs, train_labels):
-  #     # define the model
-  #
-  #     model = Sequential()
-  #     model.add(Embedding(vocab_size, 100, weights=[embeddings_matrix], input_length=40, trainable=False))
-  #     model.add(Conv1D(filters=100, kernel_size=3, padding='same', activation='relu'))
-  #     model.add(MaxPooling1D(pool_size=2))
-  #     model.add(Flatten())
-  #     model.add(Dense(250, activation='relu'))
-  #     model.add(Dense(20, activation='sigmoid'))
-  #     # compile the model
-  #     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
-  #     # summarize the model
-  #     if cvscores == []:
-  #         print(model.summary())
-  #     # fit the model
-  #     model.fit(padded_docs[train], train_labels[train], epochs=5, verbose=0)
-  #     scores = model.evaluate(padded_docs[test], train_labels[test], verbose=0)
-  #     print("%s: %.2f%%" % (model.metrics_names[1], scores[1] * 100))
-  #     cvscores.append(scores[1] * 100)
-  # print("%.2f%% (+/- %.2f%%)" % (np.mean(cvscores), np.std(cvscores)))
-
-
 
   # define the model
 
